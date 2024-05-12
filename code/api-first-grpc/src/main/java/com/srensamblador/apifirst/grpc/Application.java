@@ -1,4 +1,4 @@
-package com.srensamblador.apifirst.rest;
+package com.srensamblador.apifirst.grpc;
 
 
 import org.springframework.boot.SpringApplication;
