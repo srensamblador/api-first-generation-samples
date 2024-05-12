@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package petstore;
+
+option java_package = "com.srensamblador.apifirst.grpc.petstore";
+option java_outer_classname = "PetProto";
+
+message Pet{
+
+  int64 id = 1;
+
+  string name = 2;
+
+  string category = 3;
+
+  repeated string photo_urls = 4;
+
+  repeated string tags = 5;
+
+  repeated string status = 6;
+}

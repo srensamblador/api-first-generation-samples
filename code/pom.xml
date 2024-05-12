@@ -16,6 +16,7 @@
 
     <name>Api First samples</name>
     <modules>
+        <module>api-first-grpc</module>
         <module>api-first-rest</module>
     </modules>
 
