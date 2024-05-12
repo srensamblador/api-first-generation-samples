@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package petstore;
+package petstore.v1;
 
 import "petstore/v1/request/get_pet_request.proto";
 import "petstore/v1/pet.proto";

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package petstore;
+package petstore.v1;
 
 option java_package = "com.srensamblador.apifirst.grpc.petstore";
 option java_outer_classname = "PetProto";

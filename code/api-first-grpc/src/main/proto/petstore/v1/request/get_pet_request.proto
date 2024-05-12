@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package petstore.request;
+package petstore.v1.request;
 
 option java_package = "com.srensamblador.apifirst.grpc.petstore.request";
 option java_outer_classname = "GetPetRequestProto";
