@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package petstore.v1;
 
-option java_package = "com.srensamblador.apifirst.grpc.petstore";
+option java_package = "com.srensamblador.apifirst.grpc.petstore.v1";
 option java_outer_classname = "PetProto";
 
 message Pet{

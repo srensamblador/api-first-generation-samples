@@ -3,9 +3,9 @@ syntax = "proto3";
 package petstore.v1.request;
 
 option java_package = "com.srensamblador.apifirst.grpc.petstore.v1.request";
-option java_outer_classname = "GetPetRequestProto";
+option java_outer_classname = "DeletePetRequestProto";
 
-message GetPetRequest{
+message DeletePetRequest{
 
   int64 id = 1;
 }

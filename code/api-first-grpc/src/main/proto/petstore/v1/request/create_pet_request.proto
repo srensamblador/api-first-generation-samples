@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package petstore.v1.request;
+
+option java_package = "com.srensamblador.apifirst.grpc.petstore.v1.request";
+option java_outer_classname = "CreatePetRequestProto";
+
+message CreatePetRequest{
+
+  string name = 2;
+
+  string category = 3;
+
+  repeated string photo_urls = 4;
+
+  repeated string tags = 5;
+
+  repeated string status = 6;
+}

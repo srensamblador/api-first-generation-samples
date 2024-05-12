@@ -2,12 +2,21 @@ syntax = "proto3";
 
 package petstore.v1;
 
+import "google/protobuf/empty.proto";
+
+import "petstore/v1/request/create_pet_request.proto";
 import "petstore/v1/request/get_pet_request.proto";
+import "petstore/v1/request/delete_pet_request.proto";
+import "petstore/v1/request/update_pet_request.proto";
 import "petstore/v1/pet.proto";
 
-option java_package = "com.srensamblador.apifirst.grpc.petstore";
+option java_package = "com.srensamblador.apifirst.grpc.petstore.v1";
 option java_outer_classname = "PetServiceProto";
 
 service PetStoreService {
-  rpc PetById (request.GetPetRequest) returns (Pet);
+  rpc get (request.GetPetRequest) returns (Pet);
+  rpc list (google.protobuf.Empty) returns (stream Pet);
+  rpc create (request.CreatePetRequest) returns (Pet);
+  rpc delete (request.DeletePetRequest) returns (google.protobuf.Empty);
+  rpc update (request.UpdatePetRequest) returns (google.protobuf.Empty);
 }
